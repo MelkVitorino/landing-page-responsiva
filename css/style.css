@@ -19,17 +19,19 @@
 
 /**********************/
 /*FUNDO DA PÁGINA*/
-body{
-    background-color: var(--fundo);
-}
 
+body{
+    margin-top: 0px;
+    background-color: #1E2647;
+}
 
 /*PARTE 1: H1, VIDEO, P e BOTÃO*/
 h1{
     text-align: center;
     font-size: 2em;
-    margin-bottom: 15px;
+    margin: 15px 10px 15px 10px;
     color: var(--amarelo);
+    text-transform: uppercase;
 }
 
 .video{
@@ -43,7 +45,7 @@ p{
     color: var(--branco);
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px 10px 15px 10px;
 }
 
 p del{
@@ -61,21 +63,153 @@ p del{
     justify-content: center;
 }
 
-.botao button {
+.botao button{
     background-color: var(--botao);
     width: 220px;
     border-radius: 25px;
     font-size: 1.5em;
     color: var(--branco);
+    box-shadow: 2px 2px 3px var(--branco);
+    margin-bottom: 15px;
 }
 
+.botao button a{
+    color: var(--branco);
+    font-size: 1.5em;
+    text-decoration: none;
+}
 .botao button:hover{
     background-color: var(--vermelho);
+    box-shadow: 2px 2px 3px var(--amarelo);
 }
 
+/* GARANTIA*/
+
+.garantia{
+    background: var(--branco);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.blocos-tres{
+    display: flex;
+}
+
+.bloco{
+    border: 1px solid black;
+    width: 300px;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 0px var(--cor2);
+}
+
+.bloco h2{
+    text-align: center;
+    font-size: 2em;
+}
+.bloco p{
+    color: var(--fundo)
+}
+
+.bloco img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+/*CHAMADA PARA EMAGRECER*/
+.chamada{
+    padding: 20px;
+}
+
+.parte-um{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.texto-chamada{
+    width: 450px;
+    text-align: center;
+}
+
+.texto-chamada h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+.texto-chamada p{
+    font-size: 1.3em;
+}
+
+.imagem-chamada{
+    width: 450px;
+    text-align: center;
+}
+
+/*DUVIDAS*/
+.duvidas{
+    background: var(--cor2);
+    padding: 20px;
+}
+.duvidas h2{
+    color: var(--amarelo);
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}
+
+.duvidas p{
+    font-size: 1.3em;
+}
+
+/*RODAPE */
+
+.rodape{
+    padding: 20px;
+}
+.rodape h4{
+    font-size: 1em;
+    color: var(--cor2);
+    text-align: center;
+}
+
+.rodape a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE DOS ITENS*/
 @media (max-width: 600px){
     iframe{
-        width: 350px;
+        width: 380px;
         min-height: 300px;
+    }
+
+    .blocos-tres{
+        display: block;
+    }
+    
+    .parte-um{
+        display: block;
+    }
+
+    .texto-chamada{
+        width: 300px;
+        text-align: center;
+    }
+
+    .imagem-chamada{
+        width: 300px;
+        text-align: center;
+    }
+
+    .botao button:hover{
+        background-color: var(--vermelho);
+        box-shadow: 2px 2px 3px var(--amarelo);
     }
 }
