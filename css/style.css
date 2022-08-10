@@ -1,0 +1,81 @@
+/* CONFIGURAÇÃO GERAL E CORES COM VAR*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --fundo: #1E2647;
+    --textos: #647FED;
+    --cor1: #2E3B6E;
+    --cor2: #495DAD;
+    --branco: #FFF;
+    --amarelo: #FFFF00;
+    --vermelho:  #FF0000;
+    --botao: #ffa500;
+}
+
+/**********************/
+/*FUNDO DA PÁGINA*/
+body{
+    background-color: var(--fundo);
+}
+
+
+/*PARTE 1: H1, VIDEO, P e BOTÃO*/
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--amarelo);
+}
+
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+p{
+    color: var(--branco);
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p del{
+    font-size: 1.5em;
+    color: var(--amarelo);
+}
+
+.preco-promocao strong{
+    font-size: 2.3em;
+    color: var(--amarelo);
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao button {
+    background-color: var(--botao);
+    width: 220px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    color: var(--branco);
+}
+
+.botao button:hover{
+    background-color: var(--vermelho);
+}
+
+@media (max-width: 600px){
+    iframe{
+        width: 350px;
+        min-height: 300px;
+    }
+}
